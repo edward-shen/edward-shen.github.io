@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
 {% include head.html %}
-  <body>
-    <main aria-label="Content">
 
-    {% include icon-github.html username=site.github_username %}
-    {% include icon-twitter.html username=site.twitter_username %}
+<body>
+  <section id="intro">
+    <main aria-label="Content">
+      <img src="/assets/profile.jpg" data-tilt data-tilt-glare />
+      <div id="social-icons">
+        {% include icon-github.html username=site.github_username %}
+        {% include icon-twitter.html username=site.twitter_username %}
+      </div>
     </main>
-  </body>
+  </section>
+
+  <script src="/assets/vanilla-tilt.min.js"></script>
+</body>
+
 </html>
