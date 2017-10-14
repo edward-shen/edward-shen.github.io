@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en " }}">
 {% include head.html %}
+<!--
+  ______    _                       _    _____ _
+ |  ____|  | |                     | |  / ____| |
+ | |__   __| |_      ____ _ _ __ __| | | (___ | |__   ___ _ __
+ |  __| / _` \ \ /\ / / _` | '__/ _` |  \___ \| '_ \ / _ \ '_ \
+ | |___| (_| |\ V  V / (_| | | | (_| |  ____) | | | |  __/ | | |
+ |______\__,_| \_/\_/ \__,_|_|  \__,_| |_____/|_| |_|\___|_| |_|
 
-<body>
-  {% include github-corner.html %}
+ If you're looking, I want to be hired. email me at hireme@syllogism.xyz
+-->
 
-  <main data-tilt>
-      <img src="/assets/profile.jpg" />
-      <h1>Edward Shen</h1>
-      <div id="social-icons">
-        {% include icon-github.html username=site.github_username %}
-        {% include icon-twitter.html username=site.twitter_username %}
-      </div>
-  </main>
+  <body>
+    {% include github-corner.html %}
+    <main data-tilt>
+      <div id="container">
+          <img src="/assets/profile.jpg" />
+          <h1>Edward Shen</h1>
+          <div id="social-icons">
+            {% include icon-github.html username=site.github_username %}
+            {% include stackoverflow.html %}
+            {% include linkedin.html %}
+            {% include gmail.html %}
+            {% include bitcoin.html %}
+          </div>
+        </div>
 
-  <script src="/assets/vanilla-tilt.min.js"></script>
-</body>
+    </main>
+
+    <script src="/assets/vanilla-tilt.min.js"></script>
+  </body>
 
 </html>
