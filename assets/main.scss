@@ -15,61 +15,37 @@
     }
 }
 
-
 @for $i from 1 through 6 {
     h#{$i} { font-family: 'Quicksand', sans-serif; }
 }
-
-header {
-    h1 { display: inline; }
-
-    a {
-        text-decoration: none;
-        display: flex;
-        align-items:center;
-    }
-
-    @include respond-to(handhelds) {
-        img { display: none; }
-        a { text-align: center; }
-    }
-
-    @include respond-to(medium-screens) {
-        img { padding: 0 8px; }
-    }
-
-    img {
-        min-width: 64px;
-        min-height: 64px;
-        width: $footer-height / 2;
-        height: $footer-height / 2;
-    }
+html {
+    height: 100%;
+    overflow: hidden;
 }
-
-@mixin hover-text-decor() {
-    &:hover { text-decoration: none; }
-}
-
-main {
-    display: inherit;
-}
-
 body {
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 #intro {
-    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     main {
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
+        background-color: #FFF;
+        transform-style: preserve-3d;
     }
 
+    h1 {
+        transform: translateZ(20px);
+        margin: 0;
+    }
     img {
         border-radius: 50%;
         border: 10px solid #FFF;
@@ -80,8 +56,9 @@ body {
             height: $profile-image-size;
         }
     }
-}
 
-svg {
-    fill: #F00;
+    #social-icons {
+        transform-style: preserve-3d;
+        transform: translateZ(40px);
+    }
 }
