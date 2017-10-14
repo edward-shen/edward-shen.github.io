@@ -16,6 +16,7 @@
     }
 }
 
+<<<<<<< HEAD
 
 h1 {
     font-family: 'Quicksand', sans-serif;
@@ -24,6 +25,12 @@ h1 {
 
 html {
     height:100%;
+=======
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: $font-color;
+>>>>>>> a2f999efb6331249253e662d1bc162ca5530312a
 }
 
 body {
@@ -31,7 +38,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     height: 100%;
+=======
+    height: 100vh;
+>>>>>>> a2f999efb6331249253e662d1bc162ca5530312a
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
 }
 
