@@ -24,15 +24,6 @@ h1 {
 
 html {
     height:100%;
-<<<<<<< HEAD
-=======
-
-h1 {
-    font-family: 'Quicksand', sans-serif;
-    color: $font-color;
->>>>>>> 6256ef6... added other social media, made the tilt effect over larger section
-=======
->>>>>>> ec09dea... oops this is why u don't manually delet stuff
 }
 
 body {
@@ -41,12 +32,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-<<<<<<< HEAD
-=======
-    height: 100vh;
->>>>>>> 6256ef6... added other social media, made the tilt effect over larger section
-=======
->>>>>>> ec09dea... oops this is why u don't manually delet stuff
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
 }
 
@@ -62,14 +47,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 50vw;
-<<<<<<< HEAD
-<<<<<<< HEAD
     text-align: center;
-=======
->>>>>>> 6256ef6... added other social media, made the tilt effect over larger section
-=======
-    text-align: center;
->>>>>>> a2f999e... fixed responsive shit
     // This is a hacky fix.
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
 
@@ -91,13 +69,6 @@ main {
 
     #social-icons {
         transform: translateZ(40px);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 6256ef6... added other social media, made the tilt effect over larger section
-=======
->>>>>>> a2f999e... fixed responsive shit
         a { text-decoration: none; }
 
         svg {
