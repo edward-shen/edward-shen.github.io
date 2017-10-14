@@ -16,6 +16,7 @@
     }
 }
 
+<<<<<<< HEAD
 
 h1 {
     font-family: 'Quicksand', sans-serif;
@@ -24,6 +25,12 @@ h1 {
 
 html {
     height:100%;
+=======
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: $font-color;
+>>>>>>> 6256ef6... added other social media, made the tilt effect over larger section
 }
 
 body {
@@ -31,7 +38,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     height: 100%;
+=======
+    height: 100vh;
+>>>>>>> 6256ef6... added other social media, made the tilt effect over larger section
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
 }
 
@@ -47,7 +58,10 @@ main {
     flex-direction: column;
     align-items: center;
     width: 50vw;
+<<<<<<< HEAD
     text-align: center;
+=======
+>>>>>>> 6256ef6... added other social media, made the tilt effect over larger section
     // This is a hacky fix.
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
 
@@ -69,6 +83,10 @@ main {
 
     #social-icons {
         transform: translateZ(40px);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6256ef6... added other social media, made the tilt effect over larger section
         a { text-decoration: none; }
 
         svg {
