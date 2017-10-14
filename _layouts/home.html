@@ -3,16 +3,16 @@
 {% include head.html %}
 
 <body>
-  <section id="intro">
-    <main aria-label="Content" data-tilt>
-      <img src="/assets/profile.jpg" data-tilt-glare/>
+  {% include github-corner.html %}
+
+  <main data-tilt>
+      <img src="/assets/profile.jpg" />
       <h1>Edward Shen</h1>
       <div id="social-icons">
         {% include icon-github.html username=site.github_username %}
         {% include icon-twitter.html username=site.twitter_username %}
       </div>
-    </main>
-  </section>
+  </main>
 
   <script src="/assets/vanilla-tilt.min.js"></script>
 </body>
