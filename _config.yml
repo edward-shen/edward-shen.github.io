@@ -9,22 +9,7 @@ url: "http://syllogism.xyz"
 twitter_username: _EdwardShen
 github_username:  edward-shen
 
-permalink: /:short_year/:month/:title
-
 # Build settings
-markdown: kramdown
-kramdown:
-    syntax_highlighter: rouge
-    syntax_highlighter_opts:
-        block:
-            line_numbers: true
-
-defaults:
-    -
-        scope:
-            path: ""
-        values:
-            layout: "post"
 
 sass:
   sass_dir: _sass

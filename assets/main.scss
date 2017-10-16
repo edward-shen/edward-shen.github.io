@@ -20,10 +20,16 @@
 h1 {
     font-family: 'Quicksand', sans-serif;
     color: $font-color;
+    transform: translateZ(20px);
+    margin: 0;
 }
 
 html {
     height:100%;
+}
+
+p {
+    color: $font-color;
 }
 
 body {
@@ -40,6 +46,8 @@ main {
     align-items: center;
     height: 75vh;
     transform-style: preserve-3d;
+    // This is a hacky fix.
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
 }
 
 #container {
@@ -49,13 +57,6 @@ main {
     align-items: center;
     width: 50vw;
     text-align: center;
-    // This is a hacky fix.
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
-
-    h1 {
-        transform: translateZ(20px);
-        margin: 0;
-    }
 
     img {
         border-radius: 50%;
@@ -68,19 +69,38 @@ main {
         }
     }
 
-    #social-icons {
-        transform: translateZ(40px);
-        a { text-decoration: none; }
+}
 
-        svg {
-            width: $social-icon-size;
-            height: $social-icon-size;
-            padding: 0 4px;
-        }
+#social-icons {
+    transform: translateZ(40px);
+
+    svg {
+        width: $social-icon-size;
+        height: $social-icon-size;
+        padding: 0 4px;
     }
 
+    a {
+        text-decoration: none;
+    }
 }
 
 svg {
     fill: $font-color;
+}
+
+a {
+    color: $font-color;
+    vertical-align: center;
+}
+
+aside {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    p {
+        margin: 0 20px;
+    }
 }
