@@ -126,6 +126,7 @@ small {
 
 #social-icons {
     transform: translateZ(40px);
+    cursor: pointer;
 
     svg {
         width: $social-icon-size;
