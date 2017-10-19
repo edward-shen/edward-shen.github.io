@@ -58,17 +58,70 @@ main {
     width: 50vw;
     text-align: center;
 
-    img {
-        border-radius: 50%;
-        border: 10px solid $font-color;
+    #circle-image {
+        margin: 10px;
+
         @include respond-to(handhelds) { width: 80vw; }
         @include respond-to(medium-screens) { width: 60vw; }
         @include respond-to(wide-screens) {
             width: $profile-image-size;
             height: $profile-image-size;
         }
+
+        #profile-pic, #bitcoin-pic  {
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+
+        #profile-pic {
+            z-index: 1;
+            transition-property: top;
+            transition: 1s;
+            transition-timing-function: ease-in-out;
+            &.profile-btc-toggled {
+                top: -70vh;
+            }
+
+        }
+
+        #bitcoin-pic {
+            transition-property: border-radius top;
+            transition-duration: 1s;
+            transition-delay: 1s;
+            &.bitcoin-btc-toggled {
+                border-radius: 4px;
+            }
+        }
+
+        img {
+            border-radius: 50%;
+            border: 10px solid $font-color;
+            @include respond-to(handhelds) { width: 80vw; }
+            @include respond-to(medium-screens) { width: 60vw; }
+            @include respond-to(wide-screens) {
+                width: $profile-image-size;
+                height: $profile-image-size;
+            }
+        }
+
     }
 
+}
+
+small {
+    transition-property: margin-top, opacity;
+    transition-duration: 1s;
+    color: $font-color;
+    margin-top: -10px;
+    opacity: 0;
+
+    &.address-btc-toggled {
+        margin-top: 20px;
+        opacity: 1;
+    }
 }
 
 #social-icons {

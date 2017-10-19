@@ -17,16 +17,20 @@
     {% include github-corner.html %}
     <main data-tilt>
       <div id="container">
-          <img src="/assets/profile.jpg" />
-          <h1>Edward Shen</h1>
-          <div id="social-icons">
-            {% include icon-github.html username=site.github_username %}
-            {% include stackoverflow.html %}
-            {% include linkedin.html %}
-            {% include gmail.html %}
-            {% include bitcoin.html %}
-          </div>
+        <div id="circle-image">
+            <img id="profile-pic" src="/assets/profile.jpg" />
+            <img id="bitcoin-pic" src="/assets/bitcoin.png" />
         </div>
+        <small id="btc-address">1NCECFDTDUQSVALYJRVBWDTXXXRDZXAPc8</small>
+        <h1>Edward Shen</h1>
+        <div id="social-icons">
+          {% include icon-github.html username=site.github_username %}
+          {% include stackoverflow.html %}
+          {% include bitcoin.html %}
+          {% include linkedin.html %}
+          {% include gmail.html %}
+        </div>
+      </div>
     </main>
     <aside>
       <a href="http://blog.syllogism.xyz">blog</a>
@@ -37,6 +41,21 @@
     </aside>
 
     <script src="/assets/vanilla-tilt.min.js"></script>
+    <script>
+    function toggleBitcoinAddress() {
+      var profilePic = document.querySelectorAll('#profile-pic')[0];
+      var bitcoinPic = document.querySelectorAll('#bitcoin-pic')[0];
+      var address = document.querySelectorAll('#btc-address')[0];
+      if (profilePic.classList.contains("profile-btc-toggled")) {
+        profilePic.classList.remove("profile-btc-toggled");
+        bitcoinPic.classList.remove("bitcoin-btc-toggled");
+        address.classList.remove("address-btc-toggled");
+      } else {
+        profilePic.classList.add("profile-btc-toggled");
+        bitcoinPic.classList.add("bitcoin-btc-toggled");
+        address.classList.add("address-btc-toggled");
+      }
+    }</script>
   </body>
 
 </html>
