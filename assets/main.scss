@@ -90,18 +90,17 @@ main {
         }
 
         #profile-pic {
-            z-index: 1;
             transition-property: top;
-            transition: 1s;
+            transition-duration: 1s;
             transition-timing-function: ease-in-out;
+            z-index: 1;
             &.profile-btc-toggled {
                 top: -80vh;
             }
-
         }
 
         #bitcoin-pic {
-            transition-property: border-radius top;
+            transition-property: border-radius;
             transition-duration: 1s;
             transition-timing-function: ease-in-out;
             &.bitcoin-btc-toggled {
