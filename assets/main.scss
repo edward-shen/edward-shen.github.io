@@ -46,8 +46,12 @@ main {
     align-items: center;
     height: 75vh;
     transform-style: preserve-3d;
+    @include respond-to(handhelds) {
+        width: 100vw;
+    }
     // This is a hacky fix.
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+
 }
 
 #container {
@@ -55,19 +59,28 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50vw;
+    width: 60vw;
+
+    @include respond-to(handhelds) {
+        margin: 0 auto;
+        width: 100vw;
+    }
     text-align: center;
 
     #circle-image {
         margin: 10px;
-
-        @include respond-to(handhelds) { width: 80vw; }
-        @include respond-to(medium-screens) { width: 60vw; }
+        @include respond-to(handhelds) {
+            width: 80vw;
+            height: 80vw;
+        }
+        @include respond-to(medium-screens) {
+            width: 60vw;
+            height: 60vw;
+        }
         @include respond-to(wide-screens) {
             width: $profile-image-size;
             height: $profile-image-size;
         }
-
         #profile-pic, #bitcoin-pic  {
             position: absolute;
             margin: 0 auto;
@@ -82,7 +95,7 @@ main {
             transition: 1s;
             transition-timing-function: ease-in-out;
             &.profile-btc-toggled {
-                top: -70vh;
+                top: -80vh;
             }
 
         }
@@ -90,7 +103,7 @@ main {
         #bitcoin-pic {
             transition-property: border-radius top;
             transition-duration: 1s;
-            transition-delay: 1s;
+            transition-timing-function: ease-in-out;
             &.bitcoin-btc-toggled {
                 border-radius: 4px;
             }
