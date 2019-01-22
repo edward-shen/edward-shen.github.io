@@ -1,5 +1,6 @@
 # edward-shen.github.io
-Personal Website
+
+Currently hosts [eddie.sh](https://eddie.sh), my own personal website.
 
 Libraries used (the only reason why you'd come to this repo):
 
