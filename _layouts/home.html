@@ -9,8 +9,7 @@
  | |___| (_| |\ V  V / (_| | | | (_| |  ____) | | | |  __/ | | |
  |______\__,_| \_/\_/ \__,_|_|  \__,_| |_____/|_| |_|\___|_| |_|
 
- If you're looking, I want to be hired. email me at hireme@syllogism.xyz
- It's a direct link to my personal email.
+ If you're looking, I want to be hired. email me at code@eddie.sh
 -->
 
   <body>
@@ -45,9 +44,9 @@
     <script src="/assets/vanilla-tilt.min.js"></script>
     <script>
     function toggleBitcoinAddress() {
-      var profilePic = document.querySelectorAll('#profile-pic')[0];
-      var bitcoinPic = document.querySelectorAll('#bitcoin-pic')[0];
-      var address = document.querySelectorAll('#btc-address')[0];
+      var profilePic = document.getElementById('profile-pic');
+      var bitcoinPic = document.getElementById('bitcoin-pic');
+      var address = document.getElementById('btc-address');
       if (profilePic.classList.contains("profile-btc-toggled")) {
         profilePic.classList.remove("profile-btc-toggled");
         bitcoinPic.classList.remove("bitcoin-btc-toggled");
