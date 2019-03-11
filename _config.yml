@@ -2,10 +2,10 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Edward Shen
-email: edward@syllogism.xyz
+email: code@eddie.sh
 description: A landing page for me.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://syllogism.xyz"
+url: "https://eddie.sh"
 twitter_username: _EdwardShen
 github_username:  edward-shen
 
